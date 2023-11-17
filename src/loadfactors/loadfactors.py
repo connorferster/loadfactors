@@ -37,7 +37,7 @@ def open_load_combinations(filename='NBCC_vec.json') -> dict:
     Returns a dict representing the load combinations contained
     in 'filename'.
     """
-    with open('NBCC_vec.json', 'r') as json_file:
+    with open(filename, 'r') as json_file:
         nbcc_vec = json.load(json_file)
     return nbcc_vec
 
